@@ -12,10 +12,10 @@ $ws = $workbook.worksheets | Where-Object {$_.Name -eq $page}
 
 $cells = $ws.Cells
 
-$row = 20
-$col = 7
+$row = 7
+$col = 3
 
-$cells.item($row,$col) = "test"
+$cells.item($row,$col) = "blah"
 
 $cells.item($row,$col)
 
